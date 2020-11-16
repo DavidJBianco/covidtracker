@@ -34,7 +34,7 @@ The NYT COVID-19 data repository is included in this one as a Git submodule.  Be
 ## Updating the Dataset
 You'll want to re-download the newest copy of the NYT data every day.  To do this, you simply need to issue the following command from within the top-level directory:
 
-> git pull --recurse --submodules
+> git submodule update --remote
 
 ## Running the Notebook
 Open the _covidtracker-use.ipynb_ file in Jupyter (either the Notebook or the Lab interface will work).  When you 'Run All Cells', the data will load and the initial visualizations will populate.  By default, it will generate cumulative and daily timelines for the US and for the state of Virginia.  Under the _Geographic Drill-Down_ section, you'll have the option to select a different state and, optionally, county for more detailed locality information.
